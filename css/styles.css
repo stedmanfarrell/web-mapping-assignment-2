@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+h1 {
+  margin: 12px;
+}
+#photogrid {
+  width: 42%;
+  display: inline-block;
+}
+.containerpg {
+  width: 49%;
+  height: 31%;
+  display: inline-block;
+  background-size: cover;
+  }
+.containerpg:hover {
+  cursor: pointer;
+}
+#rightframe {
+  width: 57%;
+
+  display: inline-block;
+
+}
+.toprightframe {
+  width: 100%;
+  font-size: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+ }
+/*
+#infobutton {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 2px;
+   margin-bottom: 10px;
+  width: 25%;
+}
+#photobutton {
+   border: 2px solid black;
+  padding: 8px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  width: 25%;
+}
+*/
+#enginename {
+  width: 55%;
+  text-align: center;
+}
+#bigphoto {
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.mta.info/sites/default/files/archive/imgs/Locomotive_shop_008.jpg");
+  background-position: center;
+  display: inline-block;
+  }
+.engineimages {
+  width: 100%;
+  height: 100%;
+  }
