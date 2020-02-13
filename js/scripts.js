@@ -1,8 +1,7 @@
 // when engine photo is clicked, run code
 $('.engineimages').click(function() {
-
   // pull photo url from class attributes
-  var photoURL = $(this).attr('src')
+var photoURL = $(this).attr('src')
   // use photourl to display engine photo in #bigphoto
   $('#bigphoto').css('background-image', `url(${photoURL})`)
 
@@ -10,4 +9,6 @@ $('.engineimages').click(function() {
   var title = $(this).attr('title')
   // display title in #enginename
   $('#enginename').html(`${title}`)
+
+
 })
