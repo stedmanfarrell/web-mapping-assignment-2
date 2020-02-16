@@ -3,47 +3,97 @@ body {
   font-family: sans-serif;
 }
 h1 {
-  margin: 12px;
+  margin: 25px;
 }
 h1:hover {
   cursor: pointer;
 }
 #photogrid {
   width: 42%;
-  display: inline-block;
+  display: inline-grid;
   vertical-align: top;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 5px;
 }
-.containerpg {
-  width: 49%;
-  height: 31%;
-  display: inline-block;
-  background-size: cover;
+  #cell1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(https://lh3.googleusercontent.com/proxy/VeRl527T0hZ5ZXwUKXp0OtUm13sY-nVo33IRSdOcL-O91XB3qd1Z9eD0nrBk7fLC4pIQ9tA2iM9_6p1uZV1fiKXDLRqp5udax5vX0JRmkNpn);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
-.containerpg:hover {
-  cursor: pointer;
-}
-#rightframe {
+  #cell2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url(https://live.staticflickr.com/3572/3474231002_d644e7ecc6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #cell3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(https://www.wamc.org/sites/wamc/files/201508/metronorthtrain.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #cell4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url(https://preview.redd.it/v5wvbjr9ujh21.jpg?width=960&crop=smart&auto=webp&s=4afeb19d862947c39c80d8e38c590c47e65e60a8);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #cell5 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(https://live.staticflickr.com/587/32584724122_aa7271e373_b.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #cell6 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url(https://trn.trains.com/~/media/images/railroad-news/news-wire/2016-and-prior/2015/10/metra_north_strsch_1758s.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+#container {
   width: 57%;
-  display: inline-block;
+  display: inline-grid;
+  vertical-align: top;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px, 300px, 200px;
+  margin-left: 5px;
 }
-
-#enginename {
-  width: 100%;
-  height: 50px;
-  font-size: 40px;
-  display: inline-block;
+#rightcell1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 75px;
 }
-#bigphoto {
+#rightcell2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
   width: 100%;
   height: 400px;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5898a8e3d482e95fd87c6f5e/1553118977182-KD2FY2DI7A3H340JC2KB/ke17ZwdGBToddI8pDm48kNbeYdrdPTxKS_DoQA--rnp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hZPx-jNbZA_TaS-5l2nNKErgejD1HGpWVNfNBijHGqt8PrF6lZ-q_LW5Fbfcn3H1Q/1960s_BostonSouthStation.jpg?format=2500w);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("https://www.mta.info/sites/default/files/archive/imgs/Locomotive_shop_008.jpg");
+  background-size: contain;
   background-position: center;
-  display: inline-block;
 }
-
-.engineimages {
-  width: 100%;
-  max-height: 100%;
+#rightcell3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
